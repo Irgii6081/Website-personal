@@ -1,0 +1,233 @@
+		/*clearing css*/
+*,html,body{
+  margin: 0;
+  padding-top: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/*container*/
+.container{
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  background-color: red;
+}
+
+/*bagian navbar*/
+.navbar{
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  background-color: #0A4D4CD9;
+  width: 100%;
+  height: 50px;
+}
+
+/*navbar isi*/
+.nav{
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+
+/*text styling text*/
+.nav > li{
+  list-style-type: none;
+  padding: 40px;
+}
+/*hover*/
+li a:hover{
+  color: grey;
+  transition: all ease-in-out;
+  transition-duration: .5s;
+  padding: 10px;
+}
+/*active*/
+.active{
+  background-color: red;
+  color: white;
+  border-radius: 12px;
+  box-shadow: 3px 2px 1px black;
+}
+/*text navbar*/
+a{
+  text-decoration: none;
+  color: white;
+  padding: 12px;
+}
+
+/*paralax*/
+.paralax{
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  width: 100%;
+}
+.home{
+  background-image: url('41075.jpg');
+  flex-wrap: wrap;
+}
+.gambar{
+  width: 400px;
+  height: auto;
+  float: right;
+  background-repeat: no-repeat;
+  padding: 0 5%;
+  background-size: 10.5em;
+  background-position: right center;
+  margin-top: 58px;
+}
+
+.about{
+  background-image: url('anime-cityscape-landscape-scenery-wallpaper-preview.jpg');
+}
+.paralax.content{
+	display: flex; /* Menggunakan Flexbox untuk mengatur tata letak */
+	justify-content: center;
+	overflow-x: auto;
+  flex-wrap: wrap; /* Mengizinkan baris baru jika tidak cukup lebar */
+  
+  background-image: url('HD-wallpaper-anime-landscape-building-sunset-clouds-scenic-anime.jpg');
+}
+.contact{
+  background-color: white;
+}
+
+.text_a {
+  padding: 0 5%;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
+.title_b{
+  border-radius: 12px;
+  background: #C0C0C078;
+  box-shadow: 5px 3px 2px #0000004A;
+  font-size: 10px;
+}
+p{
+  font-size: 18px;
+}
+.bio_c{
+  font-size: 300%;
+}
+
+.text_1 {
+  padding: 0 2%;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  height: 100vh
+}
+.title_2{
+  color: black;
+  border-radius: 12px;
+  background: #C0C0C078;
+  font-size: 10px;
+}
+p{
+  font-size: 19px;
+}
+.bio_4{
+  font-size: 450%;
+}
+
+.footer{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  background-color: white;
+}
+
+@media (max-width: 768px) {
+  .gambar {
+    width: 100%; /* Misalnya, mengubah lebar gambar menjadi 100% agar sesuai dengan lebar layar hp */
+    padding: 0 6%;
+    height: auto; /* Untuk menjaga aspek ratio gambar */
+    float: none; /* Agar gambar tidak "float" di kanan pada mode hp */
+    background-size: 100% auto; /* Memastikan ukuran latar belakang sesuai dengan layar hp */
+    background-position: center; /* Memposisikan latar belakang ke tengah */
+    margin-top: 60px;/* Atur nilai margin-top sesuai dengan tinggi navbar */
+  }
+  
+.text_a {
+  padding: 0 5%;
+  display: flex;
+  text-align: center;
+  align-items: cente;
+  height: 200px;
+}
+.title_b{
+  color: black;
+  border-radius: 12px;
+  background: #C0C0C078;
+  font-size: 10px;
+}
+p{
+  font-size: 18px;
+}
+.bio_c{
+  font-size: 300%;
+}
+  /* Selain .gambar, Anda juga bisa menyesuaikan elemen lain dengan perubahan tata letak untuk mode hp */
+  .card {
+    margin: 0 0 10px 0; 
+    .paralax.content {
+    flex-direction: column; /* Mengatur tata letak card menjadi vertikal */
+  }
+  .card-container {
+    flex-direction: column; /* Mengatur tata letak card menjadi vertikal */
+  }
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 0 10px 0 0;
+  padding: 10px;
+  text-align: center;
+  max-width: 400px;
+  max-height: 400px; 
+  overflow: hidden;
+}
+
+.card img {
+  max-width: 100%;
+}
+
+.card-content {
+  padding: 10px;
+}
+
+.card h2 {
+  font-size: 20px;
+  margin: 0;
+}
+
+.card p {
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+.card a {
+  text-decoration: none;
+  background-color: #007BFF;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+
+.card a:hover {
+  background-color: #0056b3;
+}
+.card-container {
+  display: flex;
+  flex-direction: row; /* Mengatur card menjadi horizontal */
+  align-items: center; /* Mengatur card di tengah halaman secara vertikal */
+  overflow-x: auto; /* Jika card melebihi lebar layar, Anda dapat menggeser horizontal */
+}
